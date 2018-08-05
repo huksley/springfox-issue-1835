@@ -11,7 +11,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.event.ContextClosedEvent;
 import org.springframework.context.event.EventListener;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -32,7 +31,6 @@ import java.util.TimeZone;
 @EnableAsync
 @EnableScheduling
 @ComponentScan
-@EnableJpaRepositories
 @EntityScan
 public class ApplicationConfig {
 	Logger log = LoggerFactory.getLogger(getClass());
